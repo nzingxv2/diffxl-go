@@ -1,0 +1,22 @@
+# File: .golangci.yml
+run:
+  deadline: 5m
+  modules-download-mode: readonly
+
+linters:
+  enable:
+    - gosimple
+    - govet
+    - staticcheck
+    - typecheck
+    - unused
+    - errcheck
+    - ineffassign
+    - gocritic
+    - gofmt
+    - revive
+
+issues:
+  exclude-use-default: false
+  max-issues-per-linter: 0
+  max-same-issues: 0
